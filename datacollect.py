@@ -98,7 +98,7 @@ try:
             dish.point(alt, az)
             print("I do be pointing bro")
             #lets get the data and then make them power specs 
-            data = ugradio.sdr.capture_data([sdr0, sdr1], 32768, 300)
+            data = ugradio.sdr.capture_data([sdr0, sdr1], 2048, 10000)
 
             # check gains maybe 
 
