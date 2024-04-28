@@ -89,10 +89,10 @@ flops = {}
 
 try: 
     for i in np.arange(len(s_topos)):
-	point += 1
-	long = point*2 -10
-	jd = ugradio.timing.julian_date()
-	alt,az = ugradio.coord.get_altaz(ra = s_topos[i].ra, dec= s_topos[i].dec, jd = jd, lat = lat, lon = lon, alt = alt)
+        point += 1
+        long = point*2 -10
+        jd = ugradio.timing.julian_date()
+        alt,az = ugradio.coord.get_altaz(ra = s_topos[i].ra, dec= s_topos[i].dec, jd = jd, lat = lat, lon = lon, alt = alt)
         if (15 < alt <85) and (5 < az < 350):
             #now we can point the big boi to the given alt az 
             dish.point(alt, az)
