@@ -53,7 +53,7 @@ def shift(signal):
 	
 # -----------------------------------------
 # -----------------------------------------
-freqs = np.fft.fftshift(np.fft.fftfreq(2048, 1/3.2))
+freqs = np.fft.fftshift(np.fft.fftfreq(32768, 1/3.2))
 
 def power(collection_run): 
     collection_run = collection_run - np.mean(collection_run)
