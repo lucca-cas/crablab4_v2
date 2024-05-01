@@ -77,7 +77,7 @@ end_lon = 250  #everything is in galactic coords
 dish = ugradio.leusch.LeuschTelescope()
 
 #this is an array of all of the different longitudes in galactic coords
-g_lons = np.arange(-10, 252, 2)
+g_lons = np.arange(-50, 252, 2)
 s_galactics = [SkyCoord(l= i, b=0, frame = 'galactic', unit='deg') for i in g_lons]
 s_topos = [s.transform_to('icrs') for s in s_galactics]
 
